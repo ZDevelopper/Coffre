@@ -131,7 +131,7 @@
   // Ouverture : 21 novembre 2036 à 00:00, heure de Paris (UTC+1)
   var TARGET = Date.UTC(2036, 10, 20, 23, 0, 0);
   // Code masqué (base64 inversé)
-  var K = "=QDMuYjM";
+  var K = "0YjM";
 
   var SEG = {
     a: "2,1.5 3,0.5 9,0.5 10,1.5 9,2.5 3,2.5",
@@ -192,7 +192,7 @@
     var m = Math.floor(s / 60); s -= m * 60;
     render(elDays, pad(d, 4));
     render(elHms, pad(h, 2) + ":" + pad(m, 2) + ":" + pad(s, 2));
-    render(elCode, "--.--");
+    render(elCode, "---");
   }
   timer = setInterval(tick, 1000);
   tick();
